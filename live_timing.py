@@ -5,6 +5,7 @@ from datetime import datetime, timedelta, timezone
 import threading
 import time
 
+CORS(app)
 app = Flask(__name__)
 OPENF1_BASE = "https://api.openf1.org/v1"
 
