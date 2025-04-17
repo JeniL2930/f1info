@@ -11,6 +11,7 @@ from datetime import datetime, timezone
 from babel.dates import format_date
 from flask_cors import CORS
 
+CORS(app)
 app = Flask(__name__)
 
 CACHE_DIR = 'f1_cache'
