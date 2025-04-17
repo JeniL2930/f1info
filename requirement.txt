@@ -1,0 +1,12 @@
+Flask
+flask-cors
+requests
+fastf1
+cachetools
+beautifulsoup4
+selenium
+babel
+
+matplotlib
+numpy
+scipy
