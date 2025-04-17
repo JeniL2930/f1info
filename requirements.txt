@@ -6,7 +6,7 @@ cachetools
 beautifulsoup4
 selenium
 babel
-
+gunicorn
 matplotlib
 numpy
 scipy
