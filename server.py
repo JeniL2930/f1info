@@ -9,6 +9,7 @@ from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from datetime import datetime, timezone
 from babel.dates import format_date
+from flask_cors import CORS
 
 app = Flask(__name__)
 
@@ -211,7 +212,7 @@ def fetch_weather(lat, lon):
         current = data.get("current_weather", {})
         temp = current.get("temperature", "?")
         icon_code = current.get("weathercode", 0)
-        print(f"Weather API response: {response.text}")
+
         weather_icons = {
             0: "☀️", 1: "🌤️", 2: "⛅", 3: "☁️", 45: "🌫️", 48: "🌫️",
             51: "🌦️", 53: "🌦️", 55: "🌧️", 61: "🌧️", 63: "🌧️", 65: "🌧️",
